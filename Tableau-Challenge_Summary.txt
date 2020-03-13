@@ -1,0 +1,32 @@
+Tableau Homework Summary
+
+Summary:  For the analysis, I looked at data for 2014.  I first looked at just some general info, such as the top 
+and bottom station, the trips per month and the trips per hour of the day.  I then looked at usage patterns by
+whether the rider was short term customer or an annual subscriber.  I discovered some interesting differences which
+I describe below.  
+
+Data:  For the analysis, I had planned to use data for the full year 2014.  However, file size was causing 
+performance issues in Tableau.  As I still wanted to look at differences over a year, I decided to use
+random sampling and based my analysis on a sample.  To do this, I brought the full months of data into 
+Python and used the Pandas sample function to take a random sample of 5% of the trips each month.  I then 
+combined the sample month into a single file and output in a csv format.  So, I was able to reduce the size
+of the data from around 8 million rows to about 400 thousand.  
+
+Analysis:  As I still wanted to get estimates for a full year, I create a variable in Tableau called Scaler.  This is
+a constant 20, which means each sample row represents 20 records(ie. I sampled 5%).  I was then able to use this to scale up to
+a full year when I did counts of the number of trips. So the results I show are estimates, but should be reasonable.
+
+Results:  I found that some station are widely used, while others are rarely used.  This data was from 2014, which
+was the first full year of the program. In 2014, only Brooklyn and Lower Manhattan had stations, which you will see
+on the map.  The program was expanded in later years to other ares.  The lower used stations are primarily in Brooklyn.
+
+I also found that the program is more widely used in warmer months, which wasn't surprising and I also found
+that it does look like a lot of people utilize the bikes for commuting to and from work, with peaks during
+rush hour.
+
+I then wanted to explore the pass type.  There are short term passes and annual subscripitions.  A vast majority
+of riders have annual subscription.  In looking at usage patterns, I began to suspect that many of the short
+term customers are tourists. They tend to do trips in the later morning and early afternoon and don't appear
+to use the bikes for commuting. The percentage of trips taken by short terms customers also increases
+during the traditional tourist season, further leading me to believe a lot of them are tourist.  This
+might be helpful in deciding how to allocate bikes to the different stations at different times of the year.        
