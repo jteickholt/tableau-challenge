@@ -1,8 +1,5 @@
-# tableau-challenge (Homework Week 20)
+# tableau-challenge
 
-### Files Included:
+### The project performs and analysis of the New Your City bikeshare program.  It used Python to pre-process the data and choose a 5% sample of trips from 2014.  Sampling was used as the amount of data was too large for Tableau to efficiently handle.  Once the sample was chosen, Tableau was used to generate, several visualisatons, two dashboards, and a story.  The visualisastions, daschboord, and story can be found on Tableau Public at the link below.
 
-#### bikedata_prep.ipynb :  Notebook used to process data and output final file to be used in Tableau
-#### Tableau-Challenge_Summary.txt : Text version summary of my analysis and results.
-
-### Note that I did not upload the data folder.  The files were too big for Github, so I put the /data folder in gitignore.
+https://public.tableau.com/profile/jeff.eickholt#!/vizhome/tableau-challenge_15839576956740/Top10
